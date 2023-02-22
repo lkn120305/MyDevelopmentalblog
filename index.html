@@ -29,7 +29,7 @@
 
   <div id="Week 1" class="tabcontent">
     <h3>Introduction to HTML, CSS & JS</h3>
-      <p>In this week’s lesson, I learned about the programming languages used to develop the front-end of a website, which are HTML, CSS & Javascript. HTML is used to create the structure and content of a website. CSS is used to design a website. Javascript is used to add functionalities to a website.</p>
+      <p>In this week’s lesson, I learned about the programming languages used to develop the front-end of a website, which are <strong>HTML, CSS & Javascript</strong>. <strong>HTML</strong> is used to create the structure and content of a website. <strong>CSS</strong> is used to design a website. <strong>Javascript</strong> is used to add functionalities to a website.</p>
   
   <p>Besides that, I also learned about the HTML elements used to create the structure of a website. Here are the following elements I learnt:</p>
   <ul>
@@ -57,8 +57,8 @@
   </div>
 
   <div id="Week 2" class="tabcontent">
-    <h3>Semantics - CSS</h3>
-	  <p>In this week’s lesson, I learned about HTML semantics and a bit of CSS styling.</p>
+    <h3>HTML Semantics & CSS</h3>
+	  <p>In this week’s lesson, I learned about <strong>HTML semantics</strong> and a bit of <strong>CSS styling</strong>.</p>
 
     <p>During the lessons, I learned and understood that the <strong>div</strong> element is a generic container that is used to group elements for styling &amp; other such purposes. It is important to utilize HTML semantics to improve the structure of our code and make it more readable and maintainable. Additionally, implementing proper semantics enhances the accessibility of a web page for users with visual impairments as screen readers rely on these to interpret the HTML code more accurately.</p>
 
@@ -119,7 +119,7 @@
   <div id="Week 6" class="tabcontent">
     <h3>Javascript Basics & DOM</h3>
     <p>
-        <strong>In this week's lesson</strong>, it was more of a development on last week's content and an introduction to DOM trees.
+    In this week's lesson, it was more of a development on last week's content and an introduction to <strong>DOM trees</strong>.
       </p>
       <p>
         Firstly, I learned about the various data types in JavaScript, which are similar to those in other programming languages. There are three types: <strong>boolean</strong>, <strong>number</strong>, and <strong>string</strong>. I also learned that JavaScript has dynamic typing, which means that you can add a named variable to a string of text. Additionally, I learned about template literals, which allow you to incorporate defined variables in JS code. For example, you can write something like: <code><pre>var age = 35;</pre> console.log('My age is ${y}')</code>
@@ -136,18 +136,44 @@
   </div>
 
   <div id="Week 7" class="tabcontent">
-    <h3>Week 7</h3>
-    <p></p>
+    <h3>Event handling, validation, Local Storage & JSON</h3>
+    <p>
+        In this week’s lesson, we had a recap of the DOM tree before being taught about event handling, validation, local storage & JSON.
+      </p>
+      <p>
+        On the topic of event handling and validation, I learned how to capture and manipulate events that occur on specified elements using the <code>addEventListener</code> method. The boolean parameter determines whether or not the event should bubble up through the DOM tree. Two functions that are useful in event handling are <code>event.preventDefault()</code> to prevent the default behaviour of an element, and <code>event.stopPropagation()</code> to stop an event from bubbling up. UI events like load, unload, error, resize, and scroll can be manipulated/captured when creating a website. 
+      </p>
+      <p>
+        I also got to learn how to do validation for forms. Firstly, I learned that you can validate forms by adding event handlers to <code>keyUp</code>, <code>blur</code>, and <code>submit</code> events. Besides that, I learned you can make radio buttons, checkboxes, and other such inputs "disabled" and create a drop-down menu by using the "select" element. Finally, I understood that IDs assigned to forms or inputs in HTML can later be used for retrieval in JavaScript.
+      </p>
+      <p>
+        Furthermore, we explored the concept of local storage, which is a mechanism that allows you to store data in the browser in a key-value pair format, with a maximum storage capacity of 5MB per domain. On the other hand, session storage is another type of storage, but unlike local storage, it doesn't store data when a tab is closed and does not support sharing data between multiple windows or tabs. These are the functions used for local storage:
+      </p>
+      <ul>
+        <li><code>localStorage.setItem(key, value)</code> / <code>localStorage[key] = value</code> / <code>localStorage.key = value</code> → To store information on the storage</li>
+        <li><code>localStorage.getItem(key)</code> / <code>localStorage.key</code> → To access value using the key</li>
+        <li><code>localStorage.length</code> → To find the number of items stored</li>
+        <li><code>localStorage.clear()</code> → To clear the entire storage</li>
+        <li><code>localStorage.removeItem(key)</code> → To remove a specific key-value pair</li>
+      </ul>
+      <p>
+        Lastly, I gained an understanding of JSON, which is a data format that resembles an object. However, unlike objects, JSON is solely used to hold data in a key-value pair format and cannot be manipulated like objects. JSON is widely used in transmitting data between a web application and a server due to its simplicity and compatibility with various programming languages. The following is one such example of how JSON can be used: <pre></pre><code>let pokemon = {"name":"Pikachu", "hp":"200", "attack":"999", "defence":"999", "type":"electric”}</code></pre>
+      </p>
   </div>
 
   <div id="Week 8" class="tabcontent">
-    <h3>Week 8</h3>
-    <p></p>
+    <h3>jQuery & AJAX</h3>
+    <p>In this week's lesson, I learned how to use <strong>jQuery</strong>, which is just a simplified version of JavaScript. I also learned about <strong>AJAX</strong>, a technique that allows you to update a webpage's contents without updating the entire page.</p>
+    <p>Using jQuery, you can select elements in HTML using a shorter syntax, such as selecting all <code>li</code> elements with the class "hot" with <code>$('li.hot')</code>. Once an element is selected, you can manipulate it using a variety of functions. For example, you can change the background colour and text colour of all <code>div</code> elements using <code>$('div').css({'background-color': 'green', 'colour': 'white'})</code>.</p>
+    <p>You can also manipulate the HTML or text content of an element using <code>html()</code> or <code>text()</code>, respectively. You can set attributes, add or remove classes, and select specific elements using functions like <code>attr()</code>, <code>addClass()</code>, <code>removeClass()</code>, <code>removeAttr()</code>, <code>prev()</code>, <code>next()</code>, <code>parent()</code>, <code>children()</code>, <code>remove()</code>, <code>clone()</code>, and <code>hasClass()</code>.</p>
+    <p>To create new elements, you can type out the syntax of the new element in HTML like such <code>$('&lt;p&gt;Hello World&lt;/p&gt;')</code> and assign it to a new variable. Then you can append the variable, prepend the variable, add the variable after, or add the variable before an existing element using <code>append()</code>, <code>prepend()</code>, <code>after()</code>, and <code>before()</code> functions.</p>
+    <p>There are two types of NodeLists in jQuery: Live and Static. Live NodeLists update automatically when changes are made to the page, while Static NodeLists do not. jQuery also has animation-related functions such as <code>slideUp()</code> and <code>animate()</code>.</p>
+    <p>As for AJAX, I learned how to create requests with JavaScript using <strong>XMLHTTP Request</strong>, <strong>Fetch API</strong>, and third-party libraries such as jQuery. I also learned about <strong>API</strong> (Application Programming Interface), which acts as a messenger that sends requests and delivers responses. Responses from an API could be JSON strings, so you might have to parse and convert them into JS objects before using them.</p>
   </div>
 
   <div id="Week 9" class="tabcontent">
-    <h3>Week 9</h3>
-    <p></p>
+    <h3>Bootstrap</h3>
+    <p>In this week's lesson, I learned how to use <strong>Bootstrap</strong>. It's a tool that makes designing websites much more manageable. It provides a set of pre-designed UI components, such as forms, buttons, navigation menus, and typography, which can be easily integrated into web pages and customised according to the developer's preferences by using class names that Bootstrap developers created for ease of use. Other than that, I also got to learn about different types of charts and got to learn about their purposes. I also got to look at how various charts could be formed on websites using <strong>chart.js</strong>.</p>
   </div>
 
   <div id="Week 12" class="tabcontent">
